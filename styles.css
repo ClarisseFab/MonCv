@@ -1,0 +1,44 @@
+*{
+    background-color: #EBEEE9;
+}
+
+h1{
+    color: green;
+    margin: 0 100px;  
+    font-family: 'Ardolint Tijza', sans-serif;
+    font-size: 70px; 
+    text-align: center; 
+}
+
+h2{
+    margin: 30px 20px;
+    font-size: 30px; 
+    font-family: 'Varuna', sans-serif; 
+    color: #5D5D5D; 
+}
+
+fieldset{
+    border: 3px dashed green; 
+    margin: 20px 60px; 
+}
+
+legend{
+    font-family: 'Varuna', sans-serif; 
+    font-weight: bold; 
+    font-style: italic;
+    font-size: 25px; 
+    color: #5D5D5D; 
+
+}
+
+.bold {
+    font-weight: 800;
+  }
+
+  p {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 

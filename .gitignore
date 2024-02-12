@@ -1,0 +1,9 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CvClacla/config/applicationhost.config
+/.vs/CvClacla/FileContentIndex
+*.sqlite
+*.json
+*.wsuo

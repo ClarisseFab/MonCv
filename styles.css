@@ -24,6 +24,10 @@ fieldset {
     border-radius: 8px;
 }
 
+.activites{
+    margin: 40px 170px; 
+}
+
 legend {
     font-family: 'Varuna', sans-serif;
     font-weight: bold;

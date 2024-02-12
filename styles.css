@@ -21,6 +21,7 @@ h2 {
 fieldset {
     border: 3px dashed green;
     margin: 40px 60px;
+    border-radius: 8px;
 }
 
 legend {
@@ -86,3 +87,25 @@ span{
 .active:after {
     content: "\2796"; 
 }
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+ 

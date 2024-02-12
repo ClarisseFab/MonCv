@@ -11,10 +11,11 @@ h1 {
 }
 
 h2 {
-    margin: 30px 20px;
+    margin: 50px 0px;
     font-size: 30px;
     font-family: 'Varuna', sans-serif;
     color: #5D5D5D;
+    text-align: center; 
 }
 
 fieldset {
@@ -34,18 +35,21 @@ legend {
     font-weight: 800;
 }
 
-p {
-    margin: 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
+ 
 
 .p {
-    display: flex;
-    justify-content: space-between;
+    font-size: 18px;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
+.list{
+    font-size: 20px; 
+}
+
+span{
+    display: flex;
+    justify-content: space-between;   
+}
+
 .accordion {
     color: #444;
     cursor: pointer;
@@ -57,21 +61,22 @@ p {
     transition: 0.4s;
 }
 
-    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    .active, .accordion:hover {
+   
+.active, .accordion:hover {
         background-color: #ccc;
     }
 
-/* Style the accordion panel. Note: hidden by default */
+
 .panel {
     padding: 0 18px;
     max-height: 0;
+    color: #444; 
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795'; 
     font-size: 13px;
     color: #777;
     float: right;
@@ -79,5 +84,5 @@ p {
 }
 
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796"; 
 }

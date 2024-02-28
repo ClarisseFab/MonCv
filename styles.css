@@ -2,6 +2,10 @@
     background-color: #EBEEE9;
 }
 
+body{
+    max-width: 100%;
+}
+
 h1 {
     color: green;
     margin: 0 100px;
@@ -16,6 +20,11 @@ h2 {
     font-family: 'Varuna', sans-serif;
     color: #5D5D5D;
     text-align: center; 
+    transition: transform 1s; 
+}
+
+h2:hover{
+    transform: scale(1.5); 
 }
 
 fieldset {
@@ -112,4 +121,121 @@ span{
     border-radius: 5px;
   }
 
- 
+ .roue{
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-left: 600px;
+    position: absolute; 
+    height: 30vw; 
+    width: 30vw; 
+    animation: roue 15s infinite linear; 
+ }
+
+
+ .ligne{
+    background-color: black; 
+  width: 50%;
+  height: 2px;
+  position: absolute; 
+  left: 50%; 
+  top: 50%; 
+  transform-origin: 0% 0%;
+ }
+
+ .ligne:nth-of-type(2){
+    transform: rotate(60deg); 
+  }
+
+  .ligne:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  
+  .ligne:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  
+  .ligne:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  
+  .ligne:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+
+  .cabin {
+    background-color: green;
+    width: 28%;
+    height: 28%;
+    position: absolute; 
+    border: 2px solid;
+    border-radius: 10%;  
+    transform-origin: 50% 0%; 
+    animation: cabins 15s linear infinite; 
+  }
+
+  .broderie1{
+    width: 100%; 
+    height: 100%; 
+    border-radius: 10%; 
+    transition: transform 1s; 
+  }
+
+.broderie1:hover{
+    transform: scale(3); 
+}
+
+  .cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+  }
+
+  .cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+  }
+  
+  .cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+  }
+  
+  .cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+  }
+  
+  .cabin:nth-of-type(5) {
+    left: 17%; 
+    top: 7%;
+  }
+  
+  .cabin:nth-of-type(6) {
+    right: 17%; 
+    top: 7%;
+  }
+
+  @keyframes roue {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }
+
+ @keyframes cabins{
+    0%{
+      transform: rotate(0deg); 
+    }
+    25%{
+        background-color: #777; 
+    }
+    50%{
+       background-color: #BDC519; 
+    }
+    100%{
+      transform: rotate(-360deg); 
+    }
+  }
+
+  

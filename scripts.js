@@ -1,42 +1,3 @@
-// JavaScript source code
-imgPath = new Array;
-SiClickGoTo = new Array;
-version = navigator.appVersion.substring(0, 1);
-if (version >= 3) {
-    i0 = new Image;
-    i0.src = 'IMG_8925.JPG';
-    SiClickGoTo[0] = "https://fr.linkedin.com/in/clarisse-fabr%C3%A8ges";
-    imgPath[0] = i0.src;
-    i1 = new Image;
-    i1.src = 'IMG_8885.JPG';
-    SiClickGoTo[1] = "https://fr.linkedin.com/in/clarisse-fabr%C3%A8ges";
-    imgPath[1] = i1.src;
-}
-a = 0;
-function StartAnim() {
-    if (version >= 2) {
-        document.write('<a href="#" onclick="ImgDest();return(false)"><img src="IMG_8925.JPG" border="0" alt="Menu" name="defil" /></a>');
-        defilimg()
-    }
-    else {
-        document.write('<a href="https://fr.linkedin.com/in/clarisse-fabr%C3%A8ges"><img src="IMG_8925.JPG" border="0" /></a>')
-    }
-}
-function ImgDest() {
-    document.location.href = SiClickGoTo[a - 1];
-}
-
-function defilimg() {
-    if (a == 2) {
-        a = 0;
-    }
-    if (version >= 2) {
-        document.defil.src = imgPath[a];
-        tempo3 = setTimeout("defilimg()", 4000);
-        a++;
-    }
-}
-
 function addAccordion() {
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -44,6 +5,7 @@ function addAccordion() {
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
             this.classList.toggle("active");
+            this.classList.toggle("activeAccordion");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
@@ -53,3 +15,74 @@ function addAccordion() {
         });
     }
 }
+
+// Slider
+
+let slideIndex = 0;
+var slideTime = 3000;
+let slideInterval = setInterval(() => changeAndReset(), slideTime);
+
+function jumpSlide(forward) {
+    clearInterval(slideInterval);
+    changeSlide(forward)
+    slideTime = 7000;
+    slideInterval = setInterval(() => changeAndReset(), slideTime);
+}
+
+function changeAndReset() {
+    changeSlide(true);
+    if(slideTime != 3000){
+        clearInterval(slideInterval);
+        slideTime = 3000;
+        slideInterval = setInterval(() => changeSlide(true), slideTime);
+    }
+}
+function currentSlide(n) {
+    const slides = document.getElementsByClassName('mySlides');
+    const dots = document.getElementsByClassName("dot");
+
+    clearInterval(slideInterval);
+
+    slides[slideIndex].classList.remove('active');
+    dots[slideIndex].classList.remove('active');
+
+    slideIndex = n;
+    slides[slideIndex].classList.add('active');
+    dots[slideIndex].classList.add('active');   
+
+
+    slideTime = 7000;
+    slideInterval = setInterval(() => changeAndReset(), slideTime);
+}
+
+function changeSlide(forward) {
+    const slides = document.getElementsByClassName('mySlides');
+    const dots = document.getElementsByClassName("dot");
+
+    slides[slideIndex].classList.remove('active');
+    dots[slideIndex].classList.remove('active');
+
+
+    if (forward) {
+        if (slideIndex + 1 > slides.length - 1) {
+            slides[0].classList.add('active');
+            dots[0].classList.add('active');
+            slideIndex = 0;
+        } else {
+            slides[slideIndex + 1].classList.add('active');
+            dots[slideIndex + 1].classList.add('active');
+            slideIndex++;
+        }
+    } else {
+        if (slideIndex - 1 < 0) {
+            slides[slides.length - 1].classList.add('active');
+            dots[slides.length - 1].classList.add('active');
+            slideIndex = slides.length - 1;
+        } else {
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+            slideIndex--;
+        }
+    }
+}
+

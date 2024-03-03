@@ -285,14 +285,38 @@ span{
 }
 
 /* Caption text */
-.text {
-color: #f2f2f2;
+.text-bd {
+color: #ffffffbd;
 font-size: 30px;
+font-weight: bold; 
 padding: 8px 12px;
 position: absolute;
-bottom: 8px;
+bottom: 3px;
+right: 20px; 
 width: 100%;
-text-align: center;
+text-align: right;
+}
+
+.text-hg{
+  color: #ffffffbd; 
+  font-size: 30px;
+  font-weight: bold; 
+  padding: 8px 12px;
+  position: absolute; 
+  top: 8px; 
+  left: 40px; 
+  width: 100%; 
+}
+
+.text-bg{
+  color: #ffffffbd; 
+  font-size: 30px;
+  font-weight: bold; 
+  padding: 8px 12px;
+  position: absolute; 
+  bottom: 3px; 
+  left: 200px; 
+  width: 100%; 
 }
 
 /* The dots/bullets/indicators */

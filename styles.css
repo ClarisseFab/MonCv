@@ -5,6 +5,7 @@
 body{
     max-width: 100%;    
     background-color: #EBEEE9;
+    overflow-x: hidden;
 }
 
 h1 {

@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-body{
-    max-width: 100%;    
+body {
+    max-width: 100%;
     background-color: #EBEEE9;
     overflow-x: hidden;
 }
@@ -21,13 +21,13 @@ h2 {
     font-size: 30px;
     font-family: 'Varuna', sans-serif;
     color: #5D5D5D;
-    text-align: center; 
-    transition: transform 1s; 
+    text-align: center;
+    transition: transform 1s;
 }
 
-h2:hover{
-    transform: scale(1.5); 
-}
+    h2:hover {
+        transform: scale(1.5);
+    }
 
 fieldset {
     border: 3px dashed green;
@@ -35,8 +35,8 @@ fieldset {
     border-radius: 8px;
 }
 
-.activites{
-    margin: 40px 170px; 
+.activites {
+    margin: 40px 170px;
 }
 
 legend {
@@ -51,19 +51,19 @@ legend {
     font-weight: 800;
 }
 
- 
+
 
 .p {
     font-size: 18px;
 }
 
-.list{
-    font-size: 20px; 
+.list {
+    font-size: 20px;
 }
 
-span{
+span {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .accordion {
@@ -77,8 +77,8 @@ span{
     transition: 0.4s;
 }
 
-   
-.active, .accordion:hover {
+
+    .active, .accordion:hover {
         background-color: #ccc;
     }
 
@@ -86,13 +86,13 @@ span{
 .panel {
     padding: 0 18px;
     max-height: 0;
-    color: #444; 
+    color: #444;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
 .accordion:after {
-    content: '\02795'; 
+    content: '\02795';
     font-size: 13px;
     color: #777;
     float: right;
@@ -100,10 +100,10 @@ span{
 }
 
 .activeAccordion:after {
-    content: "\2796"; 
+    content: "\2796";
 }
 
-.gallery{
+.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -113,242 +113,296 @@ span{
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 10px;
-  }
+}
 
-  .gallery img {
-    width: 100%;
-    max-width: 100px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
+    .gallery img {
+        width: 100%;
+        max-width: 100px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 
- .roue{
+.roue {
     border: 3px solid black;
     border-radius: 50%;
     margin-left: 600px;
-    position: absolute; 
-    height: 30vw; 
-    width: 30vw; 
-    animation: roue 15s infinite linear; 
- }
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    animation: roue 15s infinite linear;
+}
 
 
- .ligne{
-    background-color: black; 
-  width: 50%;
-  height: 2px;
-  position: absolute; 
-  left: 50%; 
-  top: 50%; 
-  transform-origin: 0% 0%;
- }
+.ligne {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0% 0%;
+}
 
- .ligne:nth-of-type(2){
-    transform: rotate(60deg); 
-  }
+    .ligne:nth-of-type(2) {
+        transform: rotate(60deg);
+    }
 
-  .ligne:nth-of-type(3) {
-    transform: rotate(120deg);
-  }
-  
-  .ligne:nth-of-type(4) {
-    transform: rotate(180deg);
-  }
-  
-  .ligne:nth-of-type(5) {
-    transform: rotate(240deg);
-  }
-  
-  .ligne:nth-of-type(6) {
-    transform: rotate(300deg);
-  }
+    .ligne:nth-of-type(3) {
+        transform: rotate(120deg);
+    }
 
-  .cabin {
+    .ligne:nth-of-type(4) {
+        transform: rotate(180deg);
+    }
+
+    .ligne:nth-of-type(5) {
+        transform: rotate(240deg);
+    }
+
+    .ligne:nth-of-type(6) {
+        transform: rotate(300deg);
+    }
+
+.cabin {
     background-color: green;
     width: 28%;
     height: 28%;
-    position: absolute; 
+    position: absolute;
     border: 2px solid;
-    border-radius: 10%;  
-    transform-origin: 50% 0%; 
-    animation: cabins 15s linear infinite; 
-  }
-
-  .broderie1{
-    width: 100%; 
-    height: 100%; 
-    border-radius: 10%; 
-    transition: transform 1s; 
-  }
-
-.broderie1:hover{
-    transform: scale(3); 
+    border-radius: 10%;
+    transform-origin: 50% 0%;
+    animation: cabins 15s linear infinite;
 }
 
-  .cabin:nth-of-type(1) {
+.broderie1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    transition: transform 1s;
+}
+
+    .broderie1:hover {
+        transform: scale(3);
+    }
+
+.cabin:nth-of-type(1) {
     right: -8.5%;
     top: 50%;
-  }
+}
 
-  .cabin:nth-of-type(2) {
+.cabin:nth-of-type(2) {
     right: 17%;
     top: 93.5%;
-  }
-  
-  .cabin:nth-of-type(3) {
+}
+
+.cabin:nth-of-type(3) {
     right: 67%;
     top: 93.5%;
-  }
-  
-  .cabin:nth-of-type(4) {
+}
+
+.cabin:nth-of-type(4) {
     left: -8.5%;
     top: 50%;
-  }
-  
-  .cabin:nth-of-type(5) {
-    left: 17%; 
-    top: 7%;
-  }
-  
-  .cabin:nth-of-type(6) {
-    right: 17%; 
-    top: 7%;
-  }
+}
 
-  @keyframes roue {
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+@keyframes roue {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
- }
+}
 
- @keyframes cabins{
-    0%{
-      transform: rotate(0deg); 
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
     }
-    25%{
-        background-color: #777; 
-    }
-    50%{
-       background-color: #BDC519; 
-    }
-    100%{
-      transform: rotate(-360deg); 
-    }
-  }
 
-  /* Slideshow container */
+    25% {
+        background-color: #777;
+    }
+
+    50% {
+        background-color: #BDC519;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Slideshow container */
 .slideshow-container {
-  max-width: 1400px;
-  position: relative;
-  margin: auto;
-  display: flex;
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+    display: flex;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 .active {
-  display: inline;
+    display: inline;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
 
 /* Caption text */
 .text-bd {
-color: #ffffffbd;
-font-size: 30px;
-font-weight: bold; 
-padding: 8px 12px;
-position: absolute;
-bottom: 3px;
-right: 20px; 
-width: 100%;
-text-align: right;
+    color: #ffffffbd;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 3px;
+    right: 20px;
+    width: 100%;
+    text-align: right;
 }
 
-.text-hg{
-  color: #ffffffbd; 
-  font-size: 30px;
-  font-weight: bold; 
-  padding: 8px 12px;
-  position: absolute; 
-  top: 8px; 
-  left: 40px; 
-  width: 100%; 
+.text-hg {
+    color: #ffffffbd;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    width: 100%;
 }
 
-.text-bg{
-  color: #ffffffbd; 
-  font-size: 30px;
-  font-weight: bold; 
-  padding: 8px 12px;
-  position: absolute; 
-  bottom: 3px; 
-  left: 200px; 
-  width: 100%; 
+.text-bg {
+    color: #ffffffbd;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 3px;
+    left: 200px;
+    width: 100%;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-  .active, .dot:hover {
-      background-color: #717171;
-  }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
 
-  /* Fading animation */
+/* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {
-      opacity: .4
-  }
+    from {
+        opacity: .4
+    }
 
-  to {
-      opacity: 1
-  }
+    to {
+        opacity: 1
+    }
 }
 
+
+/*TEMPORAIRE */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@200;400;600&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+.congrats {
+    animation: grossissement 3s linear infinite;
+    color: red;
+    font-family: 'Ardolint Tijza', sans-serif;
+    font-size: 100px;
+}
+
+.ici {
+    animation: grossissement 3s linear infinite;
+    color: red;
+}
+
+@keyframes grossissement {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(2.0);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.heart {
+    position: fixed;
+    font-size: 1.5rem;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0vh) translateX(-10vw);
+    }
+
+    to {
+        transform: translateY(105vh) translateX(10vw);
+    }
+}

@@ -18,8 +18,8 @@ h1 {
 
 h2 {
     margin: 50px 0px;
-    font-size: 30px;
-    font-family: 'Varuna', sans-serif;
+    font-size: 35px;
+    font-family: Space Grotesk, sans-serif;
     color: #5D5D5D;
     text-align: center; 
     transition: transform 1s; 
@@ -40,10 +40,10 @@ fieldset {
 }
 
 legend {
-    font-family: 'Varuna', sans-serif;
+    font-family: Space Grotesk, sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 25px;
+    font-size: 30px;
     color: #5D5D5D;
 }
 
@@ -54,11 +54,14 @@ legend {
  
 
 .p {
-    font-size: 18px;
+    font-size: 22px;
+    font-family: space Mono; 
+    font-weight: bold;
 }
 
 .list{
     font-size: 20px; 
+    font-family: space Mono; 
 }
 
 span{
